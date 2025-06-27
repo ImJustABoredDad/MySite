@@ -1,7 +1,47 @@
+:root {
+    --background-color: #070202;
+    --panel-color: rgba(12, 3, 3, 0.9);
+    --panel-border-color: rgba(255, 183, 115, 0.25);
+    --panel-text-color: #ffffff;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: var(--background-color);
     color: #ffffff;
     text-align: center;
-    padding-top: 100px;
+}
+
+.container-fluid {
+    padding: 0; 
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding-top: 300px;
+    max-width: 1200px;
+}
+
+.nav {
+    background-color: var(--panel-color);
+    border-radius: 0.25rem;
+    border: 1px solid var(--panel-border-color); 
+    margin: 0 auto;
+    color: var(--panel-text-color);
+    padding: 0.5rem;
+}
+
+.panel {
+    background-color: var(--panel-color);
+    border-radius: 0.25rem;
+    border: 1px solid var(--panel-border-color); 
+    padding: 1rem;
+    margin-top: 0.5rem;
+    color: var(--panel-text-color);
 }
